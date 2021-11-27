@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerUser"
+    android:id="@+id/userScrollView"
+    android:scrollbars="vertical"
+    android:background="@drawable/bg3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/linearDude"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="First Name"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxStrokeWidthFocused="5dp"
+                app:boxStrokeWidth="4dp"
+                app:errorEnabled="true"
+                app:hintAnimationEnabled="true"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userFname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="30dp"
+                    android:gravity="bottom"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:layout_marginTop="10dp"
+
+                app:boxStrokeColor="@color/purple"
+                app:boxStrokeWidthFocused="5dp"
+                app:boxStrokeWidth="4dp"
+                app:hintAnimationEnabled="true"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userLname"
+                    android:paddingTop="30dp"
+                    android:gravity="bottom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email ID"
+                android:layout_marginTop="10dp"
+                app:hintAnimationEnabled="true"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxStrokeColor="@color/purple"
+                app:boxStrokeWidthFocused="5dp"
+                app:boxStrokeWidth="4dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userMail"
+                    android:inputType="textWebEmailAddress"
+                    android:paddingTop="30dp"
+                    android:gravity="bottom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:endIconMode="password_toggle"
+                android:layout_marginTop="10dp"
+                app:hintAnimationEnabled="true"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxStrokeColor="@color/purple"
+                app:boxStrokeWidthFocused="5dp"
+                app:boxStrokeWidth="4dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userPwd"
+                    android:inputType="textPassword"
+                    android:paddingTop="30dp"
+                    android:gravity="bottom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Re-type Password"
+                app:endIconMode="password_toggle"
+                android:layout_marginTop="10dp"
+                app:hintAnimationEnabled="true"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxStrokeColor="@color/purple"
+                app:boxStrokeWidthFocused="5dp"
+                app:boxStrokeWidth="4dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userRePwd"
+                    android:inputType="textPassword"
+                    android:paddingTop="30dp"
+                    android:gravity="bottom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userGender"
+                android:padding="5dp"
+                android:orientation="vertical"
+
+                >
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/male"
+                    android:text="Male"
+                    android:textSize="17dp"
+                    android:paddingLeft="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButtonTheme"
+                    android:checked="true"
+                    />
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/female"
+                    android:textSize="17dp"
+                    android:paddingLeft="5dp"
+                    android:text="Female"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButtonTheme"
+
+                    />
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/other"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:paddingLeft="5dp"
+                    android:text="Non-Binary"
+                    android:textColor="@color/white"
+                    android:theme="@style/RadioButtonTheme"
+
+                    />
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxStrokeColor="@color/purple"
+                app:boxStrokeWidthFocused="5dp"
+                app:boxStrokeWidth="4dp"
+                android:hint="Date of Birth"
+                app:startIconDrawable="@drawable/ic_dob"
+                app:hintAnimationEnabled="true"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userDob"
+                    android:paddingTop="30dp"
+                    android:gravity="bottom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                app:boxStrokeColor="@color/purple"
+                app:boxStrokeWidthFocused="5dp"
+                app:boxStrokeWidth="4dp"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="true"
+                android:hint="State/UT"
+                app:hintAnimationEnabled="true"
+                >
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userRegion"
+                    android:paddingTop="30dp"
+                    android:gravity="bottom"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                app:hintAnimationEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxStrokeColor="@color/purple"
+                app:boxStrokeWidthFocused="5dp"
+                app:boxStrokeWidth="4dp"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userAddress"
+                    android:paddingTop="30dp"
+                    android:gravity="bottom"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact no."
+                app:hintAnimationEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:boxStrokeColor="@color/purple"
+                app:boxStrokeWidthFocused="5dp"
+                app:boxStrokeWidth="4dp"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                app:prefixText="+91"
+                app:prefixTextAppearance="@style/prefixStyle"
+
+                app:prefixTextColor="@color/purple"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/userContact"
+                    android:inputType="number"
+                    android:paddingTop="30dp"
+                    android:gravity="bottom"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <android.widget.Button
+            android:layout_width="270dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/palanquin_dark_semibold"
+            android:padding="10dp"
+            android:text="Sign Up"
+            android:textAllCaps="true"
+            android:textSize="21dp"
+            android:background="@drawable/custom_button"
+            android:layout_below="@+id/linearDude"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/userRegister"
+
+            />
+
+    </RelativeLayout>
+</ScrollView>

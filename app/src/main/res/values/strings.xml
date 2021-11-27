@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">MedCare</string>
+    <string name="contact_no">Contact No.</string>
+    <string name="contact_mail">Email Address</string>
+    <string name="academic_q">Academic Qualifications</string>
+    <string name="exp">Experience</string>
+    <string name="specialty">Specializes in </string>
+    <string-array name="specialties">
+        <item>Audiologist</item>
+        <item>Allergist</item>
+        <item>Andrologist</item>
+        <item>Anesthesiologist</item>
+        <item>Cardiologist</item>
+        <item>Cardiovascular Surgeon</item>
+        <item>Clinical Neurophysiologist</item>
+        <item>Dentist</item>
+        <item>Emergency Doctor</item>
+        <item>Endocrinologist</item>
+        <item>Epidemiologists</item>
+        <item>ENT Specialist</item>
+        <item>Family Practitioner</item>
+        <item>Gastroenterologist</item>
+        <item>Gynecologist</item>
+        <item>General Psychiatrist</item>
+        <item>Hematologist</item>
+        <item>Hepatologist</item>
+        <item>Immunologist</item>
+        <item>Infectious Disease Specialist</item>
+        <item>Internal Medicine Specialist</item>
+        <item>Internist</item>
+        <item>Medical Geneticist</item>
+        <item>Microbiologist</item>
+        <item>Neonatologist</item>
+        <item>Nephrologist</item>
+        <item>Neurologist</item>
+        <item>Neurosurgeon</item>
+        <item>Obstetrician</item>
+        <item>Oncologist</item>
+        <item>Ophthalmologist</item>
+        <item>Orthopedic Surgeon</item>
+        <item>Orthopedist</item>
+        <item>Primatologist</item>
+        <item>Pale pathologist</item>
+        <item>Parasitologist</item>
+        <item>Pathologist</item>
+        <item>Pediatrician</item>
+        <item>Plastic Surgeon</item>
+        <item>Physiatrist</item>
+        <item>Physiologist</item>
+        <item>Podiatrist</item>
+        <item>Psychiatrist</item>
+        <item>Pulmonologist</item>
+        <item>Radiologist</item>
+        <item>Reproductive Endocrinologist</item>
+        <item>Rheumatologist</item>
+        <item>Thoracic Oncologist</item>
+        <item>Urologist</item>
+        <item>Veterinarian</item>
+
+    </string-array>
+    <string-array name="regionList">
+        <item>Delhi</item>
+        <item>Uttar Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Bihar</item>
+        <item>West Bengal</item>
+        <item>Madhya Pradesh</item>
+        <item>Tamil Nadu</item>
+        <item>Rajasthan</item>
+        <item>Karnataka</item>
+        <item>Gujarat</item>
+        <item>Andhra Pradesh</item>
+        <item>Odisha</item>
+        <item>Telangana</item>
+        <item>Kerala</item>
+        <item>Jharkhand</item>
+        <item>Assam</item>
+        <item>Punjab</item>
+        <item>Chhattisgarh</item>
+        <item>Haryana</item>
+        <item>Jammu and Kashmir</item>
+        <item>Uttarakhand</item>
+        <item>Himachal Pradesh</item>
+        <item>Tripura</item>
+        <item>Meghalaya</item>
+        <item>Manipur</item>
+        <item>Nagaland</item>
+        <item>Goa</item>
+        <item>Arunachal Pradesh</item>
+        <item>Puducherry</item>
+        <item>Mizoram</item>
+        <item>Chandigarh</item>
+        <item>Sikkim</item>
+        <item>Dadra and Nagar Haveli and Andaman and Nicobar Islands</item>
+        <item>Ladakh</item>
+        <item>Lakshadweep</item>
+    </string-array>
+</resources>

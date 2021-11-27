@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nosifer"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <LinearLayout
+        android:id="@+id/userType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/welcomeTxt"
+
+        app:layout_constraintVertical_bias="0.32999998">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/doc_icon_resized"            android:elevation="10dp"
+            android:shadowColor="@color/black"
+            android:text="Doctor"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="7dp"
+            app:rippleColor="#F3676464" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/user_icon_resized"
+            android:elevation="10dp"
+            android:shadowColor="@color/black"
+            android:text="User"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="7dp"
+            app:rippleColor="#F3676464" />
+
+    </LinearLayout>
+<include layout="@layout/trademark"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

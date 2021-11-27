@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bookingAppointment"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/activityBanner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/custom_banner" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="320dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/convergence"
+            android:minLines="2"
+            android:text="Book your\nAppointment"
+            android:textColor="#9C27B0"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="100dp"
+            android:fontFamily="@font/actor"
+            android:text="Doctor name"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/activityBanner"
+            >
+
+            <DatePicker
+                android:id="@+id/date_of_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:endYear="2100"
+                android:maxDate="12/31/2100"
+                android:minDate="11/13/2021"
+                android:spinnersShown="true"
+                android:startYear="2021" />
+
+            <TimePicker
+                android:id="@+id/time_of_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:headerBackground="@color/purple_700"
+                android:numbersSelectorColor="#2196F3"
+                android:timePickerMode="clock" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirm_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Confirm Booking"
+                android:textColor="#FF1744"
+                app:elevation="7dp"
+                app:rippleColor="#DC5586"
+                app:strokeColor="#F10E61"
+                android:padding="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                app:cornerRadius="20dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                app:strokeWidth="2dp"
+                />
+
+        </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
