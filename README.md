@@ -1,1 +1,2 @@
 # medicant-App
+‘MEDICANT’ is an android based smart application that focuses on the preventive care and wellbeing of the users, endowed with a flexible interface that aims at facilitating the work of Doctors, the cornerstones of society. The system provides a platform where patients can book their appointments at their own convenience while adhering to the doctor’s schedule. The system essentially emphasizes the importance of extensive communication between patients and doctors with the help of the in-app chatbox.
